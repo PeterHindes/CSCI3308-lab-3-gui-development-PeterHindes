@@ -1,0 +1,44 @@
+Lab 3: GUI Development Implementation Plan
+Goal Description
+Implement a personal website using HTML, CSS, and Bootstrap as per the Lab 3 instructions. The website will include a Home page, Hobbies page, Projects page, and a Resume page.
+
+Proposed Changes
+Directory Structure
+Create the following structure:
+
+submission/
+|-- views/
+|   |-- home.html
+|   |-- hobbies.html
+|   |-- projects.html
+|   |-- resume.html
+|-- resources/
+|   |-- img/
+|   |   |-- [placeholder images]
+|   |-- css/
+|       |-- style.css (optional)
+
+Components
+[NEW] 
+home.html
+Bootstrap Navbar (Home, Hobbies, Projects) with right-aligned icon.
+Profile image and short description.
+Link to Resume page.
+Footer with social media links.
+[NEW] 
+hobbies.html
+Bootstrap Navbar & Footer.
+Grid system for layout.
+Minimum 3 Cards for hobbies (Image, Title, Description).
+[NEW] 
+projects.html
+Bootstrap Navbar & Footer.
+Accordion for projects.
+Each project item: Image on left, Description on right (using Grid).
+[NEW] 
+resume.html
+Bootstrap Navbar & Footer.
+HTML-based resume (Experience, Education, Skills).
+[NEW] 
+Images
+Generate or place placeholder images for profile, hobbies, and projects.
