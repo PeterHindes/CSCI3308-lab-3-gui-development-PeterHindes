@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies - Personal Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../resources/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .hobby-card {
+            transition: transform 0.3s;
+        }
+
+        .hobby-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="hobbies.html">Hobbies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <i class="fas fa-user-circle fa-2x text-white"></i>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hobbies Content -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">My Hobbies</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100 hobby-card shadow-sm">
+                    <img src="../resources/img/hobby_coding.png" class="card-img-top p-3" alt="Coding">
+                    <div class="card-body">
+                        <h5 class="card-title">Coding</h5>
+                        <p class="card-text">I love building software and solving complex problems through code. It
+                            allows me to be creative and analytical at the same time.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col">
+                <div class="card h-100 hobby-card shadow-sm">
+                    <img src="../resources/img/hobby_reading.png" class="card-img-top p-3" alt="Reading">
+                    <div class="card-body">
+                        <h5 class="card-title">Reading</h5>
+                        <p class="card-text">Reading expands my horizons and introduces me to new ideas. I enjoy both
+                            fiction and technical books.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100 hobby-card shadow-sm">
+                    <img src="../resources/img/hobby_gaming.png" class="card-img-top p-3" alt="Gaming">
+                    <div class="card-body">
+                        <h5 class="card-title">Gaming</h5>
+                        <p class="card-text">Gaming is my way to unwind and experience immersive stories. It also
+                            inspires me with its interactive design.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p>Connect with me:</p>
+            <a href="https://github.com" class="text-white me-3" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+            <a href="https://linkedin.com" class="text-white me-3" target="_blank"><i
+                    class="fab fa-linkedin fa-lg"></i></a>
+            <a href="https://twitter.com" class="text-white" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+            <p class="mt-3 mb-0">&copy; 2026 Peter Hindes</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
