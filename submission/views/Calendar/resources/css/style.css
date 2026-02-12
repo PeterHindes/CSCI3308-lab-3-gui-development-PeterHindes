@@ -1,0 +1,49 @@
+h1 {
+  text-align: center;
+  padding-top: 2%;
+}
+
+body {
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+.event:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
+.custom-container {
+  width: 100%;
+  padding: 20%;
+}
+
+.category-work {
+  background-color: #cfe2ff !important;
+  border-color: #b6d4fe !important;
+}
+
+.category-personal {
+  background-color: #d1e7dd !important;
+  border-color: #badbcc !important;
+}
+
+.category-social {
+  background-color: #fff3cd !important;
+  border-color: #ffecb5 !important;
+}
+
+.category-other {
+  background-color: #f8d7da !important;
+  border-color: #f5c2c7 !important;
+}
+
+/* Fix flex column overflow behavior */
+#calendar>div {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
