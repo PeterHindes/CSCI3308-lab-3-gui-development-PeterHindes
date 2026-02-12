@@ -60,6 +60,11 @@ function saveEvent(e) {
     events.push(eventDetails);
     addEventToCalendarUI(eventDetails);
     e.target.reset(); // Clear the form
+
+    // Close the modal programmatically
+    const modalElement = document.getElementById('eventModal');
+    const modalInstance = bootstrap.Modal.getOrCreateInstance(modalElement);
+    modalInstance.hide();
 }
 document.getElementById('eventForm').addEventListener('submit', saveEvent);
 
