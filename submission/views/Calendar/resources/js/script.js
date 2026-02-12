@@ -128,33 +128,33 @@ function createEventCard(eventDetails) {
     return event_element;
 }
 
-document.getElementById('createRandomEvent').addEventListener('click', function () {
-    const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-    const categories = ['Work', 'Personal', 'Social', 'Other'];
-    const modalities = ['In-Person', 'Remote'];
+// document.getElementById('createRandomEvent').addEventListener('click', function () {
+//     const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+//     const categories = ['Work', 'Personal', 'Social', 'Other'];
+//     const modalities = ['In-Person', 'Remote'];
 
-    const randomDay = days[Math.floor(Math.random() * days.length)];
-    const randomCategory = categories[Math.floor(Math.random() * categories.length)];
-    const randomModality = modalities[Math.floor(Math.random() * modalities.length)];
+//     const randomDay = days[Math.floor(Math.random() * days.length)];
+//     const randomCategory = categories[Math.floor(Math.random() * categories.length)];
+//     const randomModality = modalities[Math.floor(Math.random() * modalities.length)];
 
-    // Generate random time
-    const hours = Math.floor(Math.random() * 24).toString().padStart(2, '0');
-    const minutes = Math.floor(Math.random() * 60).toString().padStart(2, '0');
+//     // Generate random time
+//     const hours = Math.floor(Math.random() * 24).toString().padStart(2, '0');
+//     const minutes = Math.floor(Math.random() * 60).toString().padStart(2, '0');
 
-    const eventDetails = {
-        name: 'Random Event',
-        weekday: randomDay,
-        time: `${hours}:${minutes}`,
-        modality: randomModality,
-        location: randomModality === 'In-Person' ? 'Random Location' : '',
-        remote_url: randomModality === 'Remote' ? 'https://example.com' : '',
-        attendees: 'Self',
-        category: randomCategory
-    };
+//     const eventDetails = {
+//         name: 'Random Event',
+//         weekday: randomDay,
+//         time: `${hours}:${minutes}`,
+//         modality: randomModality,
+//         location: randomModality === 'In-Person' ? 'Random Location' : '',
+//         remote_url: randomModality === 'Remote' ? 'https://example.com' : '',
+//         attendees: 'Self',
+//         category: randomCategory
+//     };
 
-    events.push(eventDetails);
-    addEventToCalendarUI(eventDetails);
-});
+//     events.push(eventDetails);
+//     addEventToCalendarUI(eventDetails);
+// });
 
 document.getElementById('eventModal').addEventListener('show.bs.modal', function (event) {
     const button = event.relatedTarget;
